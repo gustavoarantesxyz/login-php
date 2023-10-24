@@ -1,0 +1,29 @@
+version: '3'
+services:
+  apache:
+    image: php:8.2-apache-mysqli
+    ports:
+      - "80:80"
+    volumes:
+      - ./app:/var/www/html
+    restart: always
+
+  mariadb:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mariadb:/var/lib/mysql
+    restart: always
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    environment:
+      PMA_HOST: mariadb
+    depends_on:
+      - mariadb
+    ports:
+      - "8080:80"
