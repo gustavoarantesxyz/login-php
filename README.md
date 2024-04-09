@@ -1,7 +1,7 @@
 # Sistema de Login em PHP e Bootstrap.
 
 ## Introdução
-Este é um projeto simples que desenvolvi a partir do zero para aplicar meus conhecimentos em PHP, Bootstrap e Docker.
+Este é um projeto que desenvolvi a partir do zero para aplicar meus conhecimentos em PHP, Bootstrap e Docker.
 
 Para o desenvolvimento deste projeto, utilizei Sessões do PHP para gerenciar erros e a lógica de acesso, alem disso usei o mysqli para executar as operações no banco de dados e, usei a função MD5 para salvar a senha de forma criptografada no banco de dados. Já no frontend utilizei o Bootstrap 5 para criar as interfaces.
 
@@ -17,12 +17,19 @@ O sistema inclui as seguintes funcionalidades:
 ## Interfaces do Projeto
 
 Tela de Login:
+
 ![Tela de Login](img/login.png)
+
 Tela de Cadastro:
+
 ![Tela de Cadastro](img/criarConta.png)
+
 Tela de Recuperar Senha:
+
 ![Tela de Recuperar](img/recuperarConta.png)
+
 Tela de Início:
+
 ![Tela de Dashboard](img/dashboard.png)
 
 ## Tecnologias Utilizadas:
